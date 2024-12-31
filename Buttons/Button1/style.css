@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+    color: white;
+    gap: 20px;
+}
+
+.button {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.button {
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/*------------- Facebook -------------*/
+
+.facebook {
+    background: #4267B2;
+    box-shadow: 0 5px #29487D;
+}
+
+.facebook:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*------------- Facebook -------------*/
+
+.x {
+    color: #000000;
+    font-size: 24px;
+    background: #ffffff;
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease;
+}
+
+.x:hover {
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #1DA1F2;
+    transform: translateY(-5px);
+}
+
+/*------------- Facebook -------------*/
+
+.instagram {
+    background: linear-gradient(90deg, #F58529, #DD2A7B, #8134AF);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.4);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease, transform 0.3s ease;
+}
+
+.instagram:hover {
+    background-position: 100% 0;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*------------- Linkedin -------------*/
+
+.linkedin {
+    background: #0077B5;
+    box-shadow: 0 5px #004B7C;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*------------- Youtube -------------*/
+
+.youtube {
+    background: #FF0000;
+    box-shadow: 0 5px #CC0000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.youtube:active {
+    transform: scale(0.9);
+    box-shadow: 0 3px #CC0000;
+}
